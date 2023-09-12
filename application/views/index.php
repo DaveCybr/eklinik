@@ -4,7 +4,7 @@
 
 <?php
 if( !isset($_SESSION['username']) && !isset($_SESSION['login']) ){
-  redirect(base_url() . 'Login');
+  redirect(base_url() . '/');
 } else {
   $menu_diakses = $this->uri->segment(0) . "/" . $this->uri->segment(1) . "/" . $this->uri->segment(2);
 }
